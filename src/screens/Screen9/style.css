@@ -1,0 +1,60 @@
+.screen-9 {
+  background-color: #ffffff;
+  border-radius: 16px;
+  height: 867px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.screen-9 .view-11 {
+  background-color: #ffffff;
+  height: 52px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+
+.screen-9 .view-12 {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  height: 815px;
+  left: 0;
+  overflow: scroll;
+  position: fixed;
+  top: 52px;
+  width: 360px;
+}
+
+.screen-9 .view-12::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.screen-9 .overlay-4 {
+  align-self: stretch;
+  background-color: #18253d0f;
+  height: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.screen-9 .text-wrapper-127 {
+  color: #c4cad1;
+  font-family: "SUIT-Thin", Helvetica;
+  font-size: 11.8px;
+  font-weight: 100;
+  left: 291px;
+  letter-spacing: -0.40px;
+  line-height: 20px;
+  position: absolute;
+  text-decoration: underline;
+  top: 773px;
+  white-space: nowrap;
+  width: 41px;
+}

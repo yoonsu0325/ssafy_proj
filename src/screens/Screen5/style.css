@@ -1,0 +1,106 @@
+.screen-5 {
+  height: 1022px;
+  overflow: hidden;
+  width: 716px;
+}
+
+.screen-5 .overlap-group-3 {
+  height: 1019px;
+  left: 7px;
+  position: relative;
+  top: 4px;
+  width: 709px;
+}
+
+.screen-5 .view-6 {
+  height: 976px;
+  left: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 43px;
+  width: 709px;
+  overflow-y: scroll;
+}
+
+
+.screen-5 .view-6::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.screen-5 .frame-104 {
+  background-color: #ffffff;
+  height: 1482px;
+  position: relative;
+  top: 12px;
+  width: 709px;
+}
+
+.screen-5 .background-11 {
+  background-color: #ffffff;
+  border-radius: 16px 16px 0px 0px;
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 709px;
+}
+
+.screen-5 .frame-105 {
+  align-items: center;
+  display: inline-flex;
+  gap: 123px;
+  left: 20px;
+  position: relative;
+  top: 16px;
+}
+
+.screen-5 .frame-106 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 521px;
+}
+
+.screen-5 .EA-ED {
+  background-image: url(https://c.animaapp.com/JuAZje8Q/img/clip-path-group@2x.png);
+  background-size: 100% 100%;
+  border-radius: 4.8px;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.screen-5 .paragraph-2 {
+  height: 24px;
+  overflow-y: scroll;
+  position: relative;
+  width: 489px;
+}
+
+.screen-5 .paragraph-2::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.screen-5 .text-wrapper-115 {
+  color: #2a2f37;
+  font-family: "SUIT-Thin", Helvetica;
+  font-size: 17.9px;
+  font-weight: 100;
+  left: 0;
+  letter-spacing: -0.60px;
+  line-height: 24px;
+  position: absolute;
+  top: 1px;
+  white-space: nowrap;
+  width: 260px;
+}
+
+.screen-5 .mask-group-15 {
+  height: 24px;
+  position: relative;
+  width: 44.66px;
+}
