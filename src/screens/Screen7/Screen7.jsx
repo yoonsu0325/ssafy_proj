@@ -21,8 +21,6 @@ export const Screen7 = () => {
             <Frame3 />
             <Background />
           </div>
-
-          <BackgroundWrapper />
         </div>
       </div>
     </div>

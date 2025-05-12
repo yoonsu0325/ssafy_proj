@@ -13,8 +13,6 @@ export const Screen8 = () => {
             <div className="text-wrapper-126">삼성동으로 이동</div>
           </div>
         </div>
-
-        <Frame4 />
       </div>
     </div>
   );
