@@ -644,16 +644,21 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
   margin-right: 10px;
   display: flex;
   align-items: center;
+	width: 25px;
+	padding : 10px;
 }
 
+
 .screen .search-icon {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  object-fit: contain;
 }
+
 
 .screen .container-wrapper {
   flex-grow: 1;

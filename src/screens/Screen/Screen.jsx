@@ -296,7 +296,7 @@ export const Screen = () => {
                 <div className="frame-69">
                   <button className="search-button" type="submit" aria-label="Search">
                     <img
-                      src="https://c.animaapp.com/JuAZje8Q/img/mask-group-4@2x.png"
+                      src="https://static-00.iconduck.com/assets.00/system-search-symbolic-icon-256x256-5bb8fl7o.png"
                       alt="Search"
                       className="search-icon"
                     />

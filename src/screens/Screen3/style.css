@@ -66,18 +66,23 @@
   width: 100%;
 }
 
+
 .screen-3 .frame-84 {
   align-items: center;
   border: 1px solid;
   border-color: #dfdfdf;
   border-radius: 6px 6px 0px 0px;
   display: flex;
-  height: 50px;
-  justify-content: space-between;
-  padding: 10px 9px;
+  justify-content: flex-start; /* space-between → flex-start */
+  padding: 14px 9px;
   position: relative;
   width: 460px;
+	height: 50px;
+  gap: 10px;
+  border: 1px solid #dfdfdf;
+  margin-top: 33px;  /* 휴대전화 아래 간격 */
 }
+
 
 .screen-3 .image-9 {
   height: 30px;
@@ -86,7 +91,7 @@
 }
 
 .screen-3 .input-2 {
-  height: 22px;
+  height: 16px;
   overflow: hidden;
   position: relative;
   width: 405px;
@@ -121,9 +126,10 @@
 }
 
 .screen-3 .input-3 {
-  height: 22px;
+  height: 16px;
   position: relative;
   width: 405px;
+
 }
 
 .screen-3 .frame-86 {
@@ -156,18 +162,22 @@
   width: 395px;
 }
 
+
 .screen-3 .text-wrapper-105 {
-  color: #929294;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Mali", Helvetica;
-  font-size: 20px;
-  font-weight: 300;
-  height: 17px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: relative;
-  text-align: center;
+	letter-spacing: 0;
+  height: 30px; /* 또는 부모 요소 기준으로 맞추기 */
+  width: 24px;
+  margin-right: 5px;	
+	line-height: normal;
+	text-align: center;
   white-space: nowrap;
-  width: 17px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #929294;
 }
 
 .screen-3 .input-4 {
@@ -209,9 +219,10 @@
   display: flex;
   gap: 8px;
   height: 50px;
-  padding: 11px 16px;
+  padding: 14px 16px;
   position: relative;
   width: 460px;
+	margin-bottom: 33px; 
 }
 
 .screen-3 .text-wrapper-107 {
@@ -433,4 +444,16 @@
   text-align: center;
   white-space: nowrap;
   width: fit-content;
+}
+
+.label-box {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mali", Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  color: #929294;
+  margin-right: 8px;
 }
