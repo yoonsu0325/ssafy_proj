@@ -22,7 +22,6 @@
   flex-direction: column;
   position: relative;
   width: 106px;
-	gap: 10px;
 }
 
 .screen-3 .v-2 {
@@ -394,7 +393,6 @@
   flex: 0 0 auto;
   gap: 6px;
   position: relative;
-	height: 40px; /* ✅ 높이 추가 (또는 상위 요소 기준에 맞춤) */
 }
 
 .screen-3 .text-wrapper-109 {
@@ -402,11 +400,12 @@
   font-family: "Bnviit Lasik OTF-Black", Helvetica;
   font-size: 22px;
   font-weight: 900;
+  height: 41px;
   letter-spacing: -0.32px;
-  line-height: 1; /* ✅ 텍스트 높이에 맞추기 */
+  line-height: 24px;
+  margin-top: -1.00px;
   position: relative;
   width: 55px;
-  margin: 0; /* ✅ 여백 제거 */
 }
 
 .screen-3 .text-wrapper-110 {

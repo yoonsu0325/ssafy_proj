@@ -1,22 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { PropertyDefaultWrapper } from "../../../../components/PropertyDefaultWrapper";
 import "./style.css";
 
 export const View = () => {
-  const [selectedDistrict, setSelectedDistrict] = useState("강남구");
-  const [selectedNeighborhood, setSelectedNeighborhood] = useState("개포동");
-
-  const districts = [
-    "강남구", "강동구", "강북구", "강서구", "관악구", "광진구", "구로구", "금천구", "노원구",
-    "도봉구", "동대문구", "동작구", "마포구", "서대문구", "서초구", "성동구", "성북구", "송파구",
-    "양천구", "영등포구", "용산구", "은평구", "종로구", "중구", "중랑구"
-  ];
-
-  const neighborhoods = [
-    "개포동", "논현동", "대치동", "도곡동", "삼성동", "세곡동", "수서동",
-    "신사동", "압구정동", "역삼동", "율현동", "일원동", "자곡동", "청담동"
-  ];
-
   return (
     <div className="view">
       <div className="vertical-border">
@@ -25,33 +11,208 @@ export const View = () => {
         </div>
       </div>
 
-      {/* 1단계: 구 선택 */}
       <div className="vertical-border-2">
         <div className="frame-35">
-          {districts.map((district) => (
-            <PropertyDefaultWrapper
-              key={district}
-              buttontext={district}
-              isSelected={selectedDistrict === district}
-              onClick={() => setSelectedDistrict(district)}
-              className="background-instance"
-            />
-          ))}
+          <PropertyDefaultWrapper
+            buttontext="강남구"
+            className="background-instance"
+            property1="selected"
+          />
+          <PropertyDefaultWrapper
+            buttontext="강동구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="강북구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="강서구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="관악구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="광진구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="구로구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="금천구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="노원구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="도봉구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="동대문구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="동작구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="마포구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="서대문구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="서초구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="성동구"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="성북구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="송파구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="양천구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="영등포구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="용산구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="은평구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="종로구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="중구"
+            className="design-component-instance-node"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="중랑구"
+            className="design-component-instance-node"
+            property1="default"
+          />
         </div>
       </div>
 
-      {/* 2단계: 동 선택 */}
       <div className="vertical-border-2">
         <div className="frame-36">
-          {neighborhoods.map((neighborhood) => (
-            <PropertyDefaultWrapper
-              key={neighborhood}
-              buttontext={neighborhood}
-              isSelected={selectedNeighborhood === neighborhood}
-              onClick={() => setSelectedNeighborhood(neighborhood)}
-              className="background-instance"
-            />
-          ))}
+          <PropertyDefaultWrapper
+            buttontext="개포동"
+            className="background-instance"
+            property1="selected"
+          />
+          <PropertyDefaultWrapper
+            buttontext="논현동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="대치동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="도곡동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="삼성동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="세곡동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="수서동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="신사동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="압구정동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="역삼동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="율현동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="일원동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="자곡동"
+            className="background-instance"
+            property1="default"
+          />
+          <PropertyDefaultWrapper
+            buttontext="청담동"
+            className="background-instance"
+            property1="default"
+          />
         </div>
       </div>
     </div>

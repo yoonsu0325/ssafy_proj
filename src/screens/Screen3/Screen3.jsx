@@ -8,7 +8,7 @@ export const Screen3 = () => {
       <div className="frame-80">
         <Link
           className="frame-81"
-          to="/"
+          to="/u4358u4454u4363u4469u4523u4370u4458u4358u4455u4523"
         >
           <img
             className="v-2"
@@ -41,7 +41,7 @@ export const Screen3 = () => {
               />
 
               <div className="input-3">
-                <input className="container-22" type="password" placeholder="비밀번호" />
+                <input className="container-22" placeholder="비밀번호" />
               </div>
             </div>
 
@@ -53,7 +53,7 @@ export const Screen3 = () => {
               />
 
               <div className="input-3">
-                <input className="container-22" type="password" placeholder="비밀번호 확인" />
+                <input className="container-22" placeholder="비밀번호 확인" />
               </div>
             </div>
 
@@ -77,7 +77,7 @@ export const Screen3 = () => {
               />
 
               <div className="input-3">
-                <input className="container-22" type="email" placeholder="이름" />
+                <input className="container-22" placeholder="이름" />
               </div>
             </div>
 
@@ -89,7 +89,7 @@ export const Screen3 = () => {
               />
 
               <div className="input-3">
-                <input className="container-22" type="date" placeholder="생년월일 8자리" />
+                <input className="container-22" placeholder="생년월일 8자리" />
               </div>
             </div>
 
@@ -101,7 +101,7 @@ export const Screen3 = () => {
               />
 
               <div className="input-3">
-                <input className="container-23" type="tel" placeholder="휴대전화번호" />
+                <input className="container-23" placeholder="휴대전화번호" />
               </div>
             </div>
           </div>

@@ -77,7 +77,7 @@
 }
 
 .frame .text-wrapper-3 {
-  align-self: center;
+  align-self: stretch;
   color: #666666;
   font-family: "Noto Sans KR", Helvetica;
   font-size: 13px;
@@ -85,12 +85,7 @@
   letter-spacing: 0;
   line-height: 13px;
   position: relative;
-	margin: 0 auto;
-  width: max-content;
-  text-align: center;
 }
-
-
 
 .frame .image {
   height: 139px;

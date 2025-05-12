@@ -20,9 +20,7 @@
   position: absolute;
   top: 43px;
   width: 709px;
-  overflow-y: scroll;
 }
-
 
 .screen-5 .view-6::-webkit-scrollbar {
   display: none;

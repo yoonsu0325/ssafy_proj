@@ -9,13 +9,13 @@ export const ScreenScreen = () => {
       <div className="frame-75">
         <div className="frame-76">
           <div className="text-input-wrapper">
-            <input className="text-input"  type="number" placeholder="최소" />
+            <input className="text-input" placeholder="최소" />
           </div>
 
           <div className="text-wrapper-99">~</div>
 
           <div className="text-input-wrapper">
-            <input className="text-input-2" type="number" placeholder="최대" />
+            <input className="text-input-2" placeholder="최대" />
           </div>
         </div>
 

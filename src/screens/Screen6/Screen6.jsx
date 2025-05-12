@@ -7,7 +7,7 @@ export const Screen6 = () => {
     <div className="screen-6" data-model-id="1:557">
       <Link
         className="frame-107"
-        to="/"
+        to="/u4358u4454u4363u4469u4523u4370u4458u4358u4455u4523"
       >
         <img
           className="v-3"
@@ -28,7 +28,7 @@ export const Screen6 = () => {
             </div>
 
             <div className="border-3">
-              <input className="text" type="password" placeholder="&amp;nbsp;" />
+              <input className="text" placeholder="&amp;nbsp;" />
 
               <div className="label-2">비밀번호</div>
             </div>
@@ -80,7 +80,7 @@ export const Screen6 = () => {
             </div>
           </div>
 
-          <Link to="/join">
+          <Link to="/u4370u4460u4363u4463u4523u4352u4449u4363u4469u4536u4361u4467">
             <button className="button-3">
               <div className="text-wrapper-121">회원가입</div>
             </button>

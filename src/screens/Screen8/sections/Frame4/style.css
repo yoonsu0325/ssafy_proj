@@ -8,11 +8,6 @@
   position: absolute;
   top: 0;
   width: 361px;
-
-  z-index: 1001;
-  background-color: white;
-  width: 100%;
-  border-radius: 10px 10px 0 0; /* ✅ 위쪽이 둥글게 */
 }
 
 .frame-4 .frame-37 {
@@ -84,7 +79,7 @@
 .frame-4 .close-svg-fill-wrapper {
   height: 24px;
   position: relative;
-  transform: none;
+  transform: rotate(180deg);
   width: 24px;
 }
 
@@ -103,6 +98,6 @@
   left: 0;
   position: absolute;
   top: 0;
-  transform: none;
+  transform: rotate(-180deg);
   width: 24px;
 }

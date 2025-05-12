@@ -17,7 +17,6 @@
   flex-direction: column;
   position: relative;
   width: 106px;
-	gap: 10px;
 }
 
 .screen-6 .v-3 {
@@ -26,8 +25,6 @@
   position: relative;
   width: 90px;
 }
-
-
 
 .screen-6 .text-wrapper-116 {
   align-self: stretch;
@@ -194,7 +191,7 @@
   color: #ffffff;
   font-family: "Noto Sans KR", Helvetica;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 300;
   left: 182px;
   letter-spacing: -0.40px;
   line-height: 24px;
@@ -491,7 +488,6 @@
   flex: 0 0 auto;
   gap: 6px;
   position: relative;
-  height: 40px;
 }
 
 .screen-6 .text-wrapper-123 {
@@ -499,9 +495,10 @@
   font-family: "Bnviit Lasik OTF-Black", Helvetica;
   font-size: 22px;
   font-weight: 900;
+  height: 41px;
   letter-spacing: -0.32px;
-  line-height: 22px; /* ✅ 폰트 크기와 동일하게 */
-  margin: 0; /* ✅ 마진 제거 */
+  line-height: 24px;
+  margin-top: -1.00px;
   position: relative;
   width: 55px;
 }
