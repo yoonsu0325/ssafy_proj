@@ -22,13 +22,13 @@ export const BackgroundWrapper = ({ onClose }) => {
           divClassName="background-border-instance"
           property1="one"
         />
-				<div className="close-svg-fill-wrapper" onClick={onClose}>
-	        <img
-	          className="mask-group-2"
-	          alt="Mask group"
-	          src="https://c.animaapp.com/JuAZje8Q/img/mask-group-24@2x.png"
-	        />
-				</div>
+        <div className="close-svg-fill-wrapper" onClick={onClose}>
+          <img
+            className="mask-group-2"
+            alt="Mask group"
+            src="https://c.animaapp.com/JuAZje8Q/img/mask-group-24@2x.png"
+          />
+        </div>
       </div>
     </div>
   );

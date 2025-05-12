@@ -14,9 +14,6 @@ export const Background = () => {
             <div className="container-13">
               <div className="text-wrapper-50">16억 1,000</div>
 
-              <div className="overlay">
-                <div className="text-wrapper-51">9층</div>
-              </div>
             </div>
 
             <div className="container-14">

@@ -9,7 +9,7 @@ import { Frame4 } from "../Screen8/sections/Frame4";
 
 import React, { useEffect, useState, useRef } from "react";
 import { Screen7 } from "../Screen7";
-import { BackgroundWrapper } from "../Screen7/sections/BackgroundWrapper"; // 헤더 컴포넌트
+import { BackgroundWrapper } from "../Screen7/sections/BackgroundWrapper";
 
 import "./style.css";
 
@@ -59,14 +59,14 @@ export const Screen = () => {
 
   return (
     <div className="screen" data-model-id="1:299">
-			{showScreen7Overlay && (
-			  <div className="overlay" onClick={(e) => handleClickOutside(e, () => setShowScreen7Overlay(false))}>
-			    <div className="screen7-overlay-content active" onClick={(e) => e.stopPropagation()}>
-						<BackgroundWrapper onClose={() => setShowScreen8Overlay(false)} />
-			      <Screen7 />
-			    </div>
-			  </div>
-			)}
+      {showScreen7Overlay && (
+        <div className="overlay" onClick={(e) => handleClickOutside(e, () => setShowScreen7Overlay(false))}>
+          <div className="screen7-overlay-content active" onClick={(e) => e.stopPropagation()}>
+            <BackgroundWrapper onClose={() => setShowScreen7Overlay(false)} />
+            <Screen7 />
+          </div>
+        </div>
+      )}
 
 			
       {showOverlay && (

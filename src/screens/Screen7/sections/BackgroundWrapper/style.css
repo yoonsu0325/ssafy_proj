@@ -1,12 +1,12 @@
 .background-wrapper {
-  background-color: #ffffff;
-  height: 56px;
-  left: 0;
-  position: absolute;
+  position: fixed;
+  z-index: 2000;
   top: 0;
+  left: 0;
   width: 388px;
+  height: 56px;
+  background-color: white;
 }
-
 .background-wrapper .frame-33 {
   align-items: center;
   display: inline-flex;

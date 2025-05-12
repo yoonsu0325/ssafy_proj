@@ -54,4 +54,9 @@
   object-fit: cover;
   position: relative;
   width: 100%;
+	overflow: hidden;
+  border-radius: inherit; /* 부모 radius 유지 */
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
