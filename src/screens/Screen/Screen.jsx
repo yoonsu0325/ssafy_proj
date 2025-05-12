@@ -22,7 +22,6 @@ export const Screen = () => {
   const [showScreen7Overlay, setShowScreen7Overlay] = useState(false);
   const screen7Ref = useRef(null);
 
-  // ✅ open/closeScreen9 함수 useEffect 밖으로 이동
   const openScreen9 = () => {
     setScreen9Visible(true);
     setTimeout(() => setScreen9Active(true), 10);
@@ -69,10 +68,11 @@ export const Screen = () => {
   }, [showOverlay, screen9Visible, showScreenScreenOverlay, showScreenWrapperOverlay, showScreen4Overlay, showScreen8Overlay, showScreen7Overlay]);
 
   const handleClickOutside = (e, closeFn) => {
+    const isScreen7 = e.target.classList.contains("screen7-full-overlay") || e.target.classList.contains("screen7-overlay-content");
     if (
       e.target.classList.contains("overlay") ||
       e.target.classList.contains("screenscreen-overlay") ||
-      e.target.classList.contains("screen7-full-overlay")
+      isScreen7
     ) {
       closeFn();
     }
@@ -81,7 +81,7 @@ export const Screen = () => {
   return (
     <div className="screen">
       {showScreen7Overlay && (
-        <div className="overlay" onClick={(e) => handleClickOutside(e, () => setShowScreen7Overlay(false))}>
+        <div className="screen7-full-overlay" onClick={(e) => handleClickOutside(e, () => setShowScreen7Overlay(false))}>
           <div className="screen7-overlay-content active" onClick={(e) => e.stopPropagation()}>
             <BackgroundWrapper onClose={() => setShowScreen7Overlay(false)} />
             <Screen7 />
