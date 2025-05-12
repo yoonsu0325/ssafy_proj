@@ -30,8 +30,7 @@
       "label": "Screen3",
       "routes": [
         "/join"
-      ],
-      "dataModelId": "15:383"
+      ]
     },
     {
       "id": "src/screens/Screen4/Screen4.jsx",

@@ -102,17 +102,21 @@ export const Screen3 = () => {
 							  </div>
 							</div>
 							<div className="frame-84">
-							  <div className="label-box">Q</div>
+
 							  <div className="input-4">
-							    <div className="container-24">
-							      <div className="text-wrapper-106">비밀번호 찾기 질문</div>
-							    </div>
+							    <select className="container-24" defaultValue="">
+							      <option value="" disabled>비밀번호 찾기 질문</option>
+							      <option value="pet">내가 키우는 애완동물의 이름은?</option>
+							      <option value="school">내가 졸업한 초등학교 이름은?</option>
+							      <option value="city">내가 태어난 도시는?</option>
+							      <option value="food">내가 가장 좋아하는 음식은?</option>
+							    </select>
 							  </div>
-							  <img className="icon" alt="icon" src="https://c.animaapp.com/JuAZje8Q/img/icon@2x.png" />
+							  
 							</div>
 							
 							<div className="frame-87">
-							  <div className="label-box">A</div>
+
 							  <div className="input-5">
 							    <input className="container-25" placeholder="답변" />
 							  </div>
