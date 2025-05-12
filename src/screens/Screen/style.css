@@ -343,15 +343,22 @@
   top: 0;
   right: 0;
   width: 360px;
-	height: 100%;
-	border-radius: 10px;
+  height: 100%;
   background-color: white;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+
+  transform: translateX(100%); /* 숨긴 상태 */
   transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
+  pointer-events: none; /* 안 보일 땐 클릭 막기 */
+  opacity: 0;
 }
 
+.screen .screen9-overlay.active {
+  transform: translateX(0); /* 등장 */
+  pointer-events: auto;
+  opacity: 1;
+}
 
 .screen .screen9-overlay.active {
   transform: translateX(0);
@@ -761,8 +768,12 @@
   box-shadow: 0px 0px 32px #00000014;
   display: block;
   height: 50px;
-  position: relative;
   width: 224px;
+	position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+	position: fixed;
+	margin-top: 50px;
 }
 
 

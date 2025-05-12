@@ -27,6 +27,7 @@
   flex: 0 0 auto;
   gap: 16px;
   position: relative;
+	margin-bottom: 7px;	
 }
 
 .background-1 .image-wrapper {
@@ -75,6 +76,7 @@
   font-weight: 100;
   letter-spacing: -0.40px;
   line-height: 22px;
+	margin-top: -1.00px;
   position: relative;
   white-space: nowrap;
   width: fit-content;

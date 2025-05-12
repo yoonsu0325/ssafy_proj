@@ -6,16 +6,15 @@ import { ScreenWrapper } from "../ScreenWrapper";
 import { Screen4 } from "../Screen4";
 import { Screen8 } from "../Screen8";
 import { Frame4 } from "../Screen8/sections/Frame4";
-
 import React, { useEffect, useState, useRef } from "react";
 import { Screen7 } from "../Screen7";
 import { BackgroundWrapper } from "../Screen7/sections/BackgroundWrapper";
-
 import "./style.css";
 
 export const Screen = () => {
   const [showOverlay, setShowOverlay] = useState(false);
-  const [showScreen9Overlay, setShowScreen9Overlay] = useState(false);
+  const [screen9Visible, setScreen9Visible] = useState(false);
+  const [screen9Active, setScreen9Active] = useState(false);
   const [showScreenScreenOverlay, setShowScreenScreenOverlay] = useState(false);
   const [showScreenWrapperOverlay, setShowScreenWrapperOverlay] = useState(false);
   const [showScreen4Overlay, setShowScreen4Overlay] = useState(false);
@@ -23,11 +22,22 @@ export const Screen = () => {
   const [showScreen7Overlay, setShowScreen7Overlay] = useState(false);
   const screen7Ref = useRef(null);
 
+  // ✅ open/closeScreen9 함수 useEffect 밖으로 이동
+  const openScreen9 = () => {
+    setScreen9Visible(true);
+    setTimeout(() => setScreen9Active(true), 10);
+  };
+
+  const closeScreen9 = () => {
+    setScreen9Active(false);
+    setTimeout(() => setScreen9Visible(false), 300);
+  };
+
   useEffect(() => {
     const handleEsc = (e) => {
-      if (e.key === 'Escape') {
+      if (e.key === "Escape") {
         setShowOverlay(false);
-        setShowScreen9Overlay(false);
+        closeScreen9();
         setShowScreenScreenOverlay(false);
         setShowScreenWrapperOverlay(false);
         setShowScreen4Overlay(false);
@@ -36,29 +46,40 @@ export const Screen = () => {
       }
     };
 
-    const anyOverlayOpen = showOverlay || showScreen9Overlay || showScreenScreenOverlay || showScreenWrapperOverlay || showScreen4Overlay || showScreen8Overlay || showScreen7Overlay;
+    const anyOverlayOpen =
+      showOverlay ||
+      screen9Visible ||
+      showScreenScreenOverlay ||
+      showScreenWrapperOverlay ||
+      showScreen4Overlay ||
+      showScreen8Overlay ||
+      showScreen7Overlay;
 
     if (anyOverlayOpen) {
-      document.body.style.overflow = 'hidden';
-      window.addEventListener('keydown', handleEsc);
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleEsc);
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      window.removeEventListener('keydown', handleEsc);
-      document.body.style.overflow = 'auto';
+      window.removeEventListener("keydown", handleEsc);
+      document.body.style.overflow = "auto";
     };
-  }, [showOverlay, showScreen9Overlay, showScreenScreenOverlay, showScreenWrapperOverlay, showScreen4Overlay, showScreen8Overlay, showScreen7Overlay]);
+  }, [showOverlay, screen9Visible, showScreenScreenOverlay, showScreenWrapperOverlay, showScreen4Overlay, showScreen8Overlay, showScreen7Overlay]);
 
   const handleClickOutside = (e, closeFn) => {
-    if (e.target.classList.contains('overlay') || e.target.classList.contains('screenscreen-overlay') || e.target.classList.contains('screen7-full-overlay')) {
+    if (
+      e.target.classList.contains("overlay") ||
+      e.target.classList.contains("screenscreen-overlay") ||
+      e.target.classList.contains("screen7-full-overlay")
+    ) {
       closeFn();
     }
   };
 
   return (
-    <div className="screen" data-model-id="1:299">
+    <div className="screen">
       {showScreen7Overlay && (
         <div className="overlay" onClick={(e) => handleClickOutside(e, () => setShowScreen7Overlay(false))}>
           <div className="screen7-overlay-content active" onClick={(e) => e.stopPropagation()}>
@@ -96,21 +117,24 @@ export const Screen = () => {
           </div>
         </div>
       )}
-			{showScreen9Overlay && (
-			  <div className="overlay" onClick={(e) => handleClickOutside(e, () => setShowScreen9Overlay(false))}>
-			    <div className="screen9-overlay active" onClick={(e) => e.stopPropagation()}>
-			      <div className="screen9-content">
-			        <div className="close-button" onClick={() => setShowScreen9Overlay(false)}>
-			          <img
-			            alt="Close"
-			            src="https://c.animaapp.com/JuAZje8Q/img/mask-group-27@2x.png"
-			          />
-			        </div>
-			        <Screen9 />
+			{screen9Visible && (
+			  <div
+			    className={`screen9-overlay ${screen9Active ? "active" : ""}`}
+			    onClick={(e) => handleClickOutside(e, closeScreen9)}
+			  >
+			    <div className="screen9-content" onClick={(e) => e.stopPropagation()}>
+			      <div className="close-button" onClick={closeScreen9}>
+			        <img
+			          alt="Close"
+			          src="https://c.animaapp.com/JuAZje8Q/img/mask-group-27@2x.png"
+			        />
 			      </div>
+			      <Screen9 />
 			    </div>
 			  </div>
 			)}
+
+
 
       {showScreenScreenOverlay && (
         <div className="screenscreen-overlay" onClick={(e) => handleClickOutside(e, () => setShowScreenScreenOverlay(false))}>
@@ -259,9 +283,10 @@ export const Screen = () => {
           </div>
 
           <div className="frame-66">
+						
             <div
               className="overlap-group-wrapper"
-              onClick={() => setShowScreen9Overlay(true)}
+              onClick={openScreen9}
             >
               <div className="overlap-group">
                 <div className="text-wrapper-92">My</div>
